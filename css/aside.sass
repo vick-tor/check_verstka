@@ -1,0 +1,241 @@
+
+.wee
+  @include bg(#EBEBEB)
+  padding-bottom: 10px
+.wee-header
+  margin-top: 140px
+  margin-bottom: 80px
+.wee-header h2, .wee-company h2
+  @extend %font-03
+  color: $cl-g1
+  line-height: 69px
+.wee-header p, .ws-caption p
+  @extend %font-02
+  color: $cl-g2
+  font-size: 24px
+  line-height: 33px
+.wee-service
+  margin: 0 auto 120px
+  width: 100%
+.ws-item
+  max-width: 350px
+  position: relative
+  background: url(../img/we-serv.png) center
+  background-size: cover
+.ws-item img
+  transition: .6s linear
+.ws-item:hover img
+  opacity: .1
+  cursor: pointer
+  //filter: brightness(30%)
+  //filter: brightness(.3)
+  //filter: contrast(40%)
+  //filter: contrast(.2)
+  //filter: grayscale(1)
+  //filter: grayscale(90%)
+.ws-caption
+  position: absolute
+  bottom: 20px
+  left: 30px
+.ws-caption p
+  color: $cl-wh
+
+
+
+.wee-company
+  margin-top: 130px
+  padding-bottom: 100px
+.wee-company h2
+  font-size: 48px
+  margin: 30px 0 42px 0
+.wee-company span
+  color: $cl-bl
+.shift
+  margin-right: -8px
+.wee-company h3
+  @extend %font-02
+  color: $cl-g2
+  font-size: 24px
+  line-height: 33px
+.wc-text-text
+  @extend %font-01
+  font-size: 18px
+  line-height: 25px
+  font-weight: 300
+  padding: 0 20px 0 0
+
+.wc-graph
+  padding: 30px 0px 12px 45px
+.wc-item
+  max-width: 255px
+  height: 255px
+  margin-bottom: 30px
+  transition: .6s linear
+  cursor: pointer
+  +bg($cl-g4)
+.wc-item,.wc-item:nth-child(4)
+  padding: 37px 37px 40px  !important
+  box-sizing: border-box
+.wc-item:hover
+  +bg($cl-bl)
+.wc-item:nth-child(4)
+  +bg($cl-bl)
+.wc-item:nth-child(4):hover
+  +bg($cl-g4)
+
+.wc-item h4, .wc-item h5
+  font-family: 'Lato'
+  font-style: normal
+  color: #000
+.wc-item h4
+  font-size: 55px
+  font-weight: 900
+  line-height: 66px
+  //letter-spacing: 0.1em
+  margin: -5px 0 18px
+.wc-item h5
+  font-weight: bold
+  font-size: 14px
+  line-height: 18px
+  margin-bottom: 45px
+.wc-item a
+  font-family: 'Lato'
+  font-style: normal
+  font-weight: bold
+  color: $cl-bl
+  font-size: 14px
+  line-height: 17px
+  text-decoration-line: underline
+.wc-item:hover h4
+  color: #fff
+.wc-item:hover h5
+  color: #fff
+.wc-item:hover a
+  color: #fff
+.wc-item:nth-child(4) a
+  color: #fff
+.wc-item:nth-child(4):hover h4
+  color: $cl-g1
+.wc-item:nth-child(4):hover h5
+  color: $cl-bl
+.wc-item:nth-child(4):hover a
+  color: $cl-bl
+
+
+
+.to-work
+  width: 100%
+  height: 630px
+  +bg($cl-g4)
+  min-height: 50px
+  padding-top: 100px
+.to-work h3
+  @extend %font-02
+  color: $cl-g2
+  font-size: 24px
+  line-height: 33px
+.work-sldr
+  width: 1110px
+  height: 377px
+  margin-top: 20px
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-content: space-between
+  padding-top: 10px
+
+.work-sldr h2
+  @extend %font-03
+  color: $cl-g1
+  line-height: 66px
+  margin: 0
+.wr-squer
+  +wh(100%, auto)
+  margin-top: 10px
+  display: flex
+  justify-content: space-between
+.wr-sl-block
+  +wh(100%, 60px)
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+.wr-sl-arrows
+  +wh(125px, auto)
+.wr-arr-left, .wr-arr-right
+  display: inline-block
+  +bg(rgba(0,95,163,.4))
+.wr-arr-left:hover, .wr-arr-right:hover
+  +bg(rgba(0,95,163,1))
+
+
+
+.to-thank
+  width: 100%
+  height: 900px
+  +bg(#fff)
+  min-height: 50px
+  padding-top: 145px
+.to-thank h3
+  @extend %font-02
+  color: $cl-g2
+  font-size: 24px
+  line-height: 33px
+.to-thank h2
+  @extend %font-03
+  color: $cl-g1
+  line-height: 66px
+  margin-top: 20px
+.to-thank-sldr
+  width: 1110px
+  height: 377px
+  margin-top: 60px
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-content: space-between
+  padding-top: 10px
+
+.to-thank-content,.to-thank-content2,.to-thank-content3
+  width: 100%
+  min-height: 320px
+  +bg($cl-g4)
+  padding: 43px 94px 0
+  margin-bottom: 45px
+  display: none
+.vid
+  display: block
+.to-thank-text
+  font-family: Lato
+  font-style: normal
+  font-weight: 300
+  font-size: 18px
+  line-height: 25px
+  letter-spacing: -0.01em
+.to-thank-caption
+  +wh(100%, auto)
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-top: 50px
+.to-thank-caption img
+  margin-right: 35px
+.to-thank-caption p
+  @extend %font-02
+  color: $cl-g3
+  font-weight: 900
+  font-size: 18px
+  line-height: 25px
+
+.to-thank-sl-block
+  +wh(100%, 60px)
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+.to-thank-sl-arrows
+  +wh(125px, auto)
+.to-thank-arr-left, .to-thank-arr-right
+  display: inline-block
+  +bg(rgba(0,95,163,.4))
+.to-thank-arr-left:hover, .to-thank-arr-right:hover
+  +bg(rgba(0,95,163,1))
+  cursor: pointer

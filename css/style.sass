@@ -1,0 +1,38 @@
+@import "mix"
+@import "fonts.css"
+
+/*---for all---*/
+header, aside, footer
+  @include wh(100%, auto)
+.wrap
+  max-width: 1110px
+  +mr0()
+  //+br(1px, #f0f, dashed)
+
+
+
+/*---top---*/
+@import "top"
+
+/*---aside---*/
+@import "aside"
+
+/*---footer---*/
+@import "footer"
+
+
+
+@media screen and (max-width: 990px)
+  .ft-data, .ft-send
+    height: 300px
+  .hed-top
+    height: auto
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-start
+    align-content: space-around
+  .hed-logo
+    margin: 20px 0 20px 0
+    justify-content: center
+  .h-nav
+    margin-top: 0px

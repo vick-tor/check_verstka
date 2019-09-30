@@ -1,0 +1,123 @@
+@import "mix"
+
+
+.hed-top
+  +wh(100%, 110px)
+  display: flex
+  justify-content: space-between
+
+
+.h-block
+  width: 670px
+  min-width: 100px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+.hed-logo
+  width: 445px
+  min-width: 215px
+  display: flex
+  align-items: center
+.hed-logo img
+  margin-bottom: 5px
+
+.addr-phone
+  @extend %font-01
+  font-size: 13px
+  line-height: 17px
+  width: inherit
+  display: flex
+  justify-content: space-between
+  margin-bottom: 10px
+.addr-phone img
+  margin-left: 25px
+.addr-phone img:nth-child(1)
+  margin-left: 0px
+
+.h-nav
+  @extend %font-02
+  font-size: 15px
+  width: inherit
+  display: flex
+  justify-content: space-between
+  margin-top: -40px
+.h-nav a
+  color: #222222
+  text-decoration: none
+  padding-right: 0px
+  text-transform: uppercase
+.h-nav a:after
+  border-bottom: 2px #005FA3 solid
+  content: ''
+  transform: scale(0)
+  transition: .2s
+  display: block
+
+.h-nav a:hover:after
+  transform: scale(1)
+
+.zag-w
+  +wh(100%, 60px)
+.zag-w h2
+  @extend %font-03
+  color: $cl-wh
+  line-height: 66px
+  margin: -15px 0 0 0
+
+.squer, .ft-squer
+  +bg($cl-bl)
+  +wh(270px, 60px)
+  margin-top: 50px
+  cursor: pointer
+  border: none
+  color: #fff
+.squer p, .ft-squer p
+  @extend %font-01
+  font-size: 18px
+  color: $cl-wh
+  text-align: center
+  line-height: 60px
+  +mr1(0, 0)
+
+.hed-cont-sldr
+  width: 100%
+  height: 670px
+  background: url(../img/top-rectangle.png) center no-repeat
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+.hed-sldr, .hed-sldr2
+  width: 1110px
+  height: 377px
+  margin-top: 65px
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-content: space-between
+
+.vid2
+  display: none !important
+
+.sl-block
+  +wh(100%, 60px)
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+.bl-dots
+  max-width: 200px
+.sl-arrows
+  +wh(125px, auto)
+  position: absolute
+  top: 496px
+  right: 20%
+.arr-left, .arr-right
+  display: inline-block
+  +bg(rgba(255,255,255,.4))
+  cursor: pointer
+.arr-left:hover, .arr-right:hover
+  +bg(rgba(255,255,255,.7))
+

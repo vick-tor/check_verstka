@@ -1,0 +1,34 @@
+$cl-bl: #005FA3
+$cl-wh: #ffffff
+$cl-g1: #333333
+$cl-g2: #BDBDBD
+$cl-g3: #222222
+$cl-g4: #ebebeb
+
+@mixin bg($cl)
+  background: $cl
+
+@mixin br($px, $cl, $st)
+  border: $px $cl $st
+
+@mixin wh($w, $h)
+  width: $w
+  height: $h
+
+@mixin mr0()
+  margin: 0 auto
+
+@mixin mr1($z, $a)
+  margin: $z $a
+
+
+%font-01
+  font-family: 'Lato', sans-serif
+  font-weight: normal
+%font-02
+  font-family: 'Lato', sans-serif
+  font-weight: 900
+%font-03
+  font-family: 'Merriweather', serif
+  font-weight: 800
+  font-size: 48px
